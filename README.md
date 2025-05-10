@@ -169,44 +169,39 @@ Player_GetVitalityHealthGrade(Player* [player])
 以下是一个简单的插件语法示例：
 
 ```c
-// Test Script
+// 为所有玩家设置 Golden Fire Skin
 LogToFile("Starting test.beg script", "!")
 print("i am ", "test ", "message")
 
 while (true){
-
-    /*
-        print("i am ", "test ", "message")
-    */
-
     // Update Entities
     EntityList_Update()
 
     // Get Current Players
     let max_p = EntityList_GetMaxPlayers()
 
-    // Player 1
-    let player_id_to_check = 1
-    let entity_1 = nil
-    // print(max_p)
+    // Start from player 1
+    let i = 1
 
-    if (max_p != 0){
-        entity_1 = EntityList_GetEntity(player_id_to_check)
-        // print(entity_1)
-    }else{
-        // print("No max_p")
-    }
+    while (i <= max_p){
+        let entity = EntityList_GetEntity(i)
 
-    if (entity_1 != 0){
-        let p1 = EntityList_GetPlayer(player_id_to_check)
-        let p1_IsValid = Player_IsValid(p1)
+        if (entity != 0){
+            let player = EntityList_GetPlayer(i)
+            let is_valid = Player_IsValid(player)
 
-        if (p1_IsValid){
-            let p1_health = Player_GetHealth(p1)
-            // mprint(p1_health)
+            if (is_valid){
+                let health = Player_GetHealth(player)
+                // print(health)
 
-            // Golden Fire
-            Player_SetSkinIndex(p1, 30)
+                // Example action: Set skin
+                Player_SetSkinIndex(player, 30)
+            }
         }
+
+        // i++
+        i = i + 1
     }
 }
+
+```
