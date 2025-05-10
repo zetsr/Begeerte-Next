@@ -23,15 +23,66 @@ Begeerte-Next 为 Dragons Legacy 提供服务器端插件功能，允许通过�
 
 ## 插件系统
 
-将源代码保存为.beg格式并放在 `*../../../Dragons/Binaries/Win64/Begeerte/Scripts*`
+### 使用方法
+
+* 我们的插件使用类C语言，*将源代码保存为.beg格式并放在 `*../../../Dragons/Binaries/Win64/Begeerte/Scripts*`*
 
 目前可用的插件 API 包括：
 
-* API 1
-* API 2
-* API 3
+### printf
+```
+printf(string [text], ...)
+```
 
-(更多 API 等待扩展)
+### print
+```
+print(string [text], ...)
+```
+
+### LogToFile
+```
+LogToFile(string [text], ...)
+```
+
+### EntityList_Update
+```
+EntityList_Update()
+```
+
+### EntityList_GetMaxPlayers
+```
+EntityList_GetMaxPlayers()
+```
+
+### EntityList_GetEntity
+```
+EntityList_GetEntity(value [entity id])
+```
+
+### EntityList_GetPlayer
+```
+EntityList_GetPlayer(value [entity id])
+```
+
+### EntityList_GetAllEntities
+```
+EntityList_GetAllEntities()
+```
+
+### Player_IsValid
+```
+Player_IsValid(Player* [player])
+```
+
+### Player_GetCharacter
+```
+Player_GetCharacter(Player* [player])
+```
+
+### Player_GetGrowthStage
+```
+Player_GetGrowthStage(Player* [player])
+```
 
 ## 语法示例
 
