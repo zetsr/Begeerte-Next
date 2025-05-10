@@ -11,7 +11,7 @@ Begeerte-Next 为 Dragons Legacy 提供服务器端插件功能，允许通过�
 按照以下步骤安装并使用 Begeerte-Next：
 
 1.  **下载并解压**: 下载 `*Begeerte-Next.rar*` 并将其解压。
-2.  **移动文件夹**: 将解压得到的 `*Dragons*` 文件夹移动到 Dragons Legacy 服务器根目录，即 `*../../../Dragons-Legacy-Dedicated-Server*`。
+2.  **移动文件夹**: 将解压得到的 `*Dragons*` 文件夹移动到 Dragons Legacy 服务器根目录。
 3.  **运行服务端**: 启动你的 Dragons Legacy 专用服务器。
 4.  **检查日志**: 如果安装成功，你应该能在服务器控制台或日志文件中看到类似 `*[Begeerte] 初始化*` 的输出。
 
