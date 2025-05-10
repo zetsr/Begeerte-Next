@@ -79,6 +79,16 @@ Player_IsValid(Player* [player])
 Player_GetCharacter(Player* [player])
 ```
 
+### Player_GetCharacterRaw
+```
+Player_GetCharacterRaw(Player* [player])
+```
+
+### Player_SetCharacter
+```
+Player_SetCharacter(Player* [player], byte [value])
+```
+
 ### Player_GetValidFlag
 ```
 Player_GetValidFlag(Player* [player])
@@ -87,6 +97,71 @@ Player_GetValidFlag(Player* [player])
 ### Player_SetValidFlag
 ```
 Player_SetValidFlag(Player* [player], byte [value])
+```
+
+### Player_GetHealth
+```
+Player_GetHealth(Player* [player])
+```
+
+### Player_SetHealth
+```
+Player_SetHealth(Player* [player], byte [value])
+```
+
+### Player_GetSkinIndex
+```
+Player_GetSkinIndex(Player* [player])
+```
+
+### Player_SetSkinIndex
+```
+Player_SetSkinIndex(Player* [player], byte [value])
+```
+
+### Player_GetGenderRaw
+```
+Player_GetGenderRaw(Player* [player])
+```
+
+### Player_SetGender
+```
+Player_SetGender(Player* [player], byte [value])
+```
+
+### Player_GetGrowthStageRaw
+```
+Player_GetGrowthStageRaw(Player* [player])
+```
+
+### Player_SetGrowthStage
+```
+Player_SetGrowthStage(Player* [player], byte [value])
+```
+
+### Player_GetSavedGrowth
+```
+Player_GetSavedGrowth(Player* [player])
+```
+
+### Player_SetSavedGrowth
+```
+Player_SetSavedGrowth(Player* [player], byte [value])
+```
+
+### Player_GetVitalityHealth
+```
+Player_GetVitalityHealth(Player* [player])
+```
+
+### Player_SetVitalityHealth
+```
+Player_SetVitalityHealth(Player* [player], byte [value])
+```
+
+### Player_GetVitalityHealthGrade
+```
+Player_GetVitalityHealthGrade(Player* [player])
 ```
 
 ## 语法示例
@@ -104,9 +179,13 @@ while (true){
         print("i am ", "test ", "message")
     */
 
+    // Update Entities
     EntityList_Update()
 
+    // Get Current Players
     let max_p = EntityList_GetMaxPlayers()
+
+    // Player 1
     let player_id_to_check = 1
     let entity_1 = nil
     // print(max_p)
@@ -126,6 +205,7 @@ while (true){
             let p1_health = Player_GetHealth(p1)
             // mprint(p1_health)
 
+            // Golden Fire
             Player_SetSkinIndex(p1, 30)
         }
     }
