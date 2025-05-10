@@ -56,12 +56,12 @@ EntityList_GetMaxPlayers()
 
 ### EntityList_GetEntity
 ```
-EntityList_GetEntity(value [entity id])
+EntityList_GetEntity(int [entity id])
 ```
 
 ### EntityList_GetPlayer
 ```
-EntityList_GetPlayer(value [entity id])
+EntityList_GetPlayer(int [entity id])
 ```
 
 ### EntityList_GetAllEntities
@@ -79,9 +79,14 @@ Player_IsValid(Player* [player])
 Player_GetCharacter(Player* [player])
 ```
 
-### Player_GetGrowthStage
+### Player_GetValidFlag
 ```
-Player_GetGrowthStage(Player* [player])
+Player_GetValidFlag(Player* [player])
+```
+
+### Player_SetValidFlag
+```
+Player_SetValidFlag(Player* [player], byte [value])
 ```
 
 ## 语法示例
