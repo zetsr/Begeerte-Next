@@ -7,8 +7,8 @@ Server plugins for Dragons of Dragons / Dragons Legacy
 按照以下步骤安装并使用 Begeerte-Next：
 
 * [下载 *Begeerte-Next.rar*](https://github.com/zetsr/Begeerte-Next/archive/refs/heads/main.zip) 并将其解压。
-* 选择对应的游戏版本
-* 将解压得到的 `*Dragons*` 文件夹移动到 Dragons of Dragons / Dragons Legacy 服务器根目录。
+* 选择对应的游戏版本，然后定向到 *Begeerte-Next-main\<游戏版本>\Windows\release\Begeerte-Next*
+* 将 *Dragons* 文件夹移动到 Dragons of Dragons / Dragons Legacy 服务器根目录。
 * 启动你的服务器。
 * 如果安装成功，你应该能在服务器控制台或日志文件中看到类似 `*[Begeerte] 初始化*` 的输出。
 
