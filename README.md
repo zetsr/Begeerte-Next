@@ -165,7 +165,7 @@ Player_GetVitalityHealthGrade(Player* [player])
 
 以下是一个简单的插件语法示例：
 
-```c
+```c#
 // Day of Dragons
 // 为所有玩家设置 Creator Skin
 LogToFile("Starting beg script", "!")
