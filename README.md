@@ -2,6 +2,9 @@
 
 Server plugins for Dragons of Dragons / Dragons Legacy
 
+## Multi-language
+
+* [English](https://github.com/zetsr/Begeerte-Next/blob/main/English.md)
 ## 使用方法
 
 按照以下步骤安装并使用 Begeerte-Next：
