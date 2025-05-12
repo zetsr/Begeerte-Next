@@ -6,7 +6,7 @@ Server plugins for Dragons of Dragons / Dragons Legacy
 
 按照以下步骤安装并使用 Begeerte-Next：
 
-* [下载][https://github.com/zetsr/Begeerte-Next/releases](https://github.com/zetsr/Begeerte-Next/archive/refs/heads/main.zip) `*Begeerte-Next.rar*` 并将其解压。
+* [下载](https://github.com/zetsr/Begeerte-Next/releases](https://github.com/zetsr/Begeerte-Next/archive/refs/heads/main.zip) `*Begeerte-Next.rar*` 并将其解压。
 * 选择对应的游戏版本
 * 将解压得到的 `*Dragons*` 文件夹移动到 Dragons of Dragons / Dragons Legacy 服务器根目录。
 * 启动你的服务器。
