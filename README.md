@@ -165,6 +165,7 @@ Player_GetVitalityHealthGrade(Player* [player])
 以下是一个简单的插件语法示例：
 
 ```c
+// Dragons Legacy
 // 为所有玩家设置 Golden Fire Skin
 LogToFile("Starting test.beg script", "!")
 print("i am ", "test ", "message")
@@ -202,6 +203,7 @@ while (true){
 ```
 
 ```c
+// Day of Dragons
 // 为所有玩家设置 Creator Skin
 LogToFile("Starting test.beg script", "!")
 print("i am ", "test ", "message")
