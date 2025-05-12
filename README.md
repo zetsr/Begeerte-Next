@@ -199,5 +199,41 @@ while (true){
         i = i + 1
     }
 }
+```
 
+```c
+// 为所有玩家设置 Creator Skin
+LogToFile("Starting test.beg script", "!")
+print("i am ", "test ", "message")
+
+while (true){
+    // Update Entities
+    EntityList_Update()
+
+    // Get Current Players
+    let max_p = EntityList_GetMaxPlayers()
+
+    // Start from player 1
+    let i = 1
+
+    while (i <= max_p){
+        let entity = EntityList_GetEntity(i)
+
+        if (entity != 0){
+            let player = EntityList_GetPlayer(i)
+            let is_valid = Player_IsValid(player)
+
+            if (is_valid){
+                let health = Player_GetHealth(player)
+                // print(health)
+
+                // Example action: Set skin
+                Player_SetSkinIndex(player, 10)
+            }
+        }
+
+        // i++
+        i = i + 1
+    }
+}
 ```
