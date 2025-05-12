@@ -2,10 +2,6 @@
 
 Server plugins for Dragons of Dragons / Dragons Legacy
 
-## 项目简介
-
-Begeerte-Next 为 Dragons Legacy 提供服务器端插件功能，允许通过脚本扩展服务器行为。
-
 ## 使用方法
 
 按照以下步骤安装并使用 Begeerte-Next：
