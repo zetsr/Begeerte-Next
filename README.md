@@ -166,76 +166,42 @@ Player_GetVitalityHealthGrade(Player* [player])
 以下是一个简单的插件语法示例：
 
 ```c
-// Dragons Legacy
-// 为所有玩家设置 Golden Fire Skin
-LogToFile("Starting test.beg script", "!")
-print("i am ", "test ", "message")
-
-while (true){
-    // Update Entities
-    EntityList_Update()
-
-    // Get Current Players
-    let max_p = EntityList_GetMaxPlayers()
-
-    // Start from player 1
-    let i = 1
-
-    while (i <= max_p){
-        let entity = EntityList_GetEntity(i)
-
-        if (entity != 0){
-            let player = EntityList_GetPlayer(i)
-            let is_valid = Player_IsValid(player)
-
-            if (is_valid){
-                let health = Player_GetHealth(player)
-                // print(health)
-
-                // Example action: Set skin
-                Player_SetSkinIndex(player, 30)
-            }
-        }
-
-        // i++
-        i = i + 1
-    }
-}
-```
-
-```c
 // Day of Dragons
 // 为所有玩家设置 Creator Skin
-LogToFile("Starting test.beg script", "!")
-print("i am ", "test ", "message")
+LogToFile("Starting beg script", "!")
+
+let Creator_Skin = 10
 
 while (true){
     // Update Entities
     EntityList_Update()
 
     // Get Current Players
-    let max_p = EntityList_GetMaxPlayers()
+    let CurrentPlayers = EntityList_GetMaxPlayers()
 
     // Start from player 1
     let i = 1
 
-    while (i <= max_p){
+    // Check All Players
+    while (i <= CurrentPlayers){
+        // Entity
         let entity = EntityList_GetEntity(i)
 
         if (entity != 0){
+            // Player
             let player = EntityList_GetPlayer(i)
-            let is_valid = Player_IsValid(player)
 
-            if (is_valid){
-                let health = Player_GetHealth(player)
-                // print(health)
-
-                // Example action: Set skin
-                Player_SetSkinIndex(player, 10)
+            // Valid Player
+            if (Player_IsValid(player)){
+                if (Player_GetSkinIndex(player) != Creator_Skin){
+                    // Example action: Set skin
+                    Player_SetSkinIndex(player, Creator_Skin)
+                    LogToFile("player: ", player, "\'s skin set to: ", Creator_Skin)
+                    print("player: ", player, "\'s skin set to: ", Creator_Skin)
+                }
             }
         }
 
-        // i++
         i = i + 1
     }
 }
