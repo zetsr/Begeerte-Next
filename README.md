@@ -1,6 +1,6 @@
 # Begeerte-Next
 
-Server-side Plugins for Dragons Legacy
+Server plugins for Dragons of Dragons / Dragons Legacy
 
 ## 项目简介
 
